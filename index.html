@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c61a5b">
+  <meta name="description" content="Melo app features, Free နှင့် Premium အသုံးပြုပုံလမ်းညွှန်">
+  <title>Melo Help Center</title>
+  <link rel="icon" type="image/png" href="assets/brand/melo-logo.png">
+  <link rel="stylesheet" href="styles.css?v=20260928-font">
+</head>
+<body>
+  <a class="skip-link" href="#features">အကြောင်းအရာသို့ ကျော်သွားရန်</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Melo Help Center ပင်မစာမျက်နှာ">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/brand/melo-logo.png" alt=""></span>
+      <span><strong>Melo</strong><small>Help Center</small></span>
+    </a>
+    <nav class="topnav" aria-label="အဓိက navigation">
+      <a href="#features">လမ်းညွှန်များ</a>
+      <a href="#plans">Premium</a>
+      <a href="#support">အကူအညီ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Melo ကို လွယ်လွယ်ကူကူ အသုံးပြုပါ</p>
+        <h1 id="hero-title">ဘာလုပ်ချင်ပါသလဲ?</h1>
+        <p class="hero-intro">Feature အမည် သို့မဟုတ် “download”, “karaoke”, “payment” လို keyword တစ်ခု ရိုက်ရှာပါ။</p>
+        <label class="search-box" for="searchInput">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+          <input id="searchInput" type="search" autocomplete="off" placeholder="Feature သို့မဟုတ် အကူအညီ ရှာရန်…">
+          <kbd aria-hidden="true">/</kbd>
+        </label>
+        <div class="quick-links" aria-label="အမြန်ရှာဖွေမှုများ">
+          <button type="button" data-query="playlist">Playlist ဖန်တီးနည်း</button>
+          <button type="button" data-query="download">Offline နားထောင်နည်း</button>
+          <button type="button" data-query="payment">Payment လုပ်နည်း</button>
+        </div>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orbit-disc"><span></span></div>
+        <div class="floating-chip chip-one">♫ Music</div>
+        <div class="floating-chip chip-two">★ Premium</div>
+        <div class="floating-chip chip-three">▶ How to</div>
+      </div>
+    </section>
+
+    <section class="guide-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FEATURE GUIDES</p>
+          <h2 id="features-title">Melo အသုံးပြုပုံလမ်းညွှန်များ</h2>
+        </div>
+        <p id="resultCount" class="result-count" aria-live="polite"></p>
+      </div>
+
+      <div class="filters" role="group" aria-label="လမ်းညွှန်များ စစ်ထုတ်ရန်">
+        <button class="filter active" type="button" data-filter="all" aria-pressed="true">အားလုံး</button>
+        <button class="filter" type="button" data-filter="free" aria-pressed="false">Free</button>
+        <button class="filter" type="button" data-filter="premium" aria-pressed="false">Premium</button>
+        <button class="filter" type="button" data-filter="mixed" aria-pressed="false">Free + Premium</button>
+      </div>
+
+      <div id="featureGrid" class="feature-grid"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <span aria-hidden="true">⌕</span>
+        <h3>ကိုက်ညီတဲ့လမ်းညွှန် မတွေ့သေးပါ</h3>
+        <p>အခြား keyword တစ်ခုနဲ့ ပြန်ရှာကြည့်ပါ။</p>
+        <button type="button" id="clearSearch">ရှာဖွေမှု ရှင်းမည်</button>
+      </div>
+    </section>
+
+    <section class="premium-section" id="plans" aria-labelledby="plans-title">
+      <div class="premium-copy">
+        <p class="eyebrow">MELO PREMIUM</p>
+        <h2 id="plans-title">ပိုကောင်းတဲ့ နားဆင်မှုအတွေ့အကြုံ</h2>
+        <p>High audio quality, offline download, visible lyrics နဲ့ Karaoke ကို Premium ဖြင့် အသုံးပြုနိုင်ပါတယ်။</p>
+        <button class="text-link" type="button" data-open-feature="premium">Premium လမ်းညွှန်ကြည့်ရန် <span>→</span></button>
+      </div>
+      <div class="plan-grid" aria-label="Premium plan များ">
+        <article><small>Daily</small><strong>99 <span>MMK</span></strong><p>1 Day</p></article>
+        <article><small>Weekly</small><strong>599 <span>MMK</span></strong><p>7 Days</p></article>
+        <article class="featured-plan"><b>Popular</b><small>Monthly</small><strong>1,999 <span>MMK</span></strong><p>30 Days</p></article>
+        <article><small>Quarterly</small><strong>4,999 <span>MMK</span></strong><p>90 Days</p></article>
+      </div>
+    </section>
+
+    <section class="support-section" id="support">
+      <div>
+        <p class="eyebrow">အကူအညီလိုသေးပါသလား?</p>
+        <h2>မိမိလိုချင်တဲ့အကြောင်းအရာကို အပေါ်က Search မှာရှာပါ</h2>
+      </div>
+      <a class="support-button" href="#top">လမ်းညွှန်ရှာမည် <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><img src="assets/brand/melo-logo.png" alt=""></span><span><strong>Melo</strong><small>Help Center</small></span></a>
+    <p>အချက်အလက်များသည် Melo App Feature Guide Version 2.0 ကို အခြေခံထားပါသည်။</p>
+    <p>Updated 28 September 2026</p>
+  </footer>
+
+  <dialog id="guideDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" type="button" aria-label="ပိတ်မည်">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
