@@ -3,7 +3,7 @@ const features = [
     id: "home", title: "Home", icon: "⌂", access: "free",
     description: "Personalized recommendations, charts, releases, playlists, albums, artists, radio နဲ့ video content တွေကို တစ်နေရာတည်းမှာ ရှာဖွေနိုင်တဲ့ main discovery page ဖြစ်ပါတယ်။",
     steps: ["App ကိုဖွင့်ပြီး Home tab ကိုဝင်ပါ။", "အပေါ်ဘက် shortcuts ကနေ Artists, Playlists, Store, Live & Videos သို့မဟုတ် Podcasts ကိုရွေးပါ။", "Weekly Top Chart, New Releases, Selected For You စတဲ့ section တွေကို scroll လုပ်ပြီး content ရွေးပါ။", "ပိုကြည့်ချင်တဲ့ section မှာ View All ကိုနှိပ်ပါ။"],
-    functions: ["Weekly Top Chart", "New Releases", "Selected For You", "Popular Albums", "Featured Artists"], image: "image1.jpg"
+    functions: ["Weekly Top Chart", "New Releases", "Selected For You", "Popular Albums", "Featured Artists"], image: "image1.jpg", illustration: "feature-home.png"
   },
   {
     id: "artist-tab", title: "Artist Tab", icon: "A", access: "free",
@@ -51,7 +51,7 @@ const features = [
     id: "download", title: "Download / Offline", icon: "↓", access: "premium",
     description: "Songs, Albums နဲ့ Playlists တွေကို device ထဲ download လုပ်ပြီး internet မရှိတဲ့အချိန်မှာ နားထောင်နိုင်တဲ့ Premium feature ဖြစ်ပါတယ်။",
     steps: ["Song, Album သို့မဟုတ် Playlist ကိုဖွင့်ပါ။", "Download ကိုနှိပ်ပါ။", "Download ပြီးရင် Library ကိုဝင်ပါ။", "Downloaded Songs, Albums သို့မဟုတ် Playlists ကနေ offline နားထောင်ပါ။"],
-    functions: ["Song download", "Album download", "Playlist download", "Offline listening"], image: "image9.jpg"
+    functions: ["Song download", "Album download", "Playlist download", "Offline listening"], image: "image9.jpg", illustration: "feature-download.png"
   },
   {
     id: "lyrics", title: "Visible Lyrics", icon: "Aa", access: "premium",
@@ -69,7 +69,7 @@ const features = [
     id: "karaoke", title: "Karaoke", icon: "♩", access: "premium",
     description: "On-screen lyrics ကိုကြည့်ရင်း song နဲ့အတူလိုက်ဆိုနိုင်တဲ့ Premium feature ဖြစ်ပါတယ်။",
     steps: ["Song ကို Player မှာဖွင့်ပါ။", "Karaoke ကိုနှိပ်ပါ။", "Karaoke screen မှာ lyrics ကိုကြည့်ပြီး Play/Pause ကိုသုံးပါ။", "Progress bar နဲ့ song position သို့မဟုတ် duration ကိုကြည့်ပြီးလိုက်ဆိုပါ။"],
-    functions: ["On-screen lyrics", "Play / Pause", "Progress & Duration", "Sing-along"], image: "image10.jpg"
+    functions: ["On-screen lyrics", "Play / Pause", "Progress & Duration", "Sing-along"], image: "image10.jpg", illustration: "feature-karaoke.png"
   },
   {
     id: "timer", title: "Sleep Timer", icon: "◷", access: "free",
@@ -93,7 +93,7 @@ const features = [
     id: "payment", title: "Payment Options", icon: "₭", access: "free",
     description: "Subscription နဲ့ eligible purchases အတွက် telecom, wallet, bank, card, in-app purchase နဲ့ Melo Coin payment methods တွေကို support လုပ်ပါတယ်။",
     steps: ["Premium plan သို့မဟုတ် eligible purchase ကိုရွေးပါ။", "Select Payment Method ကိုဖွင့်ပါ။", "MPT, ATOM, KBZ Pay, Wallet, Card, Melo Coin သို့မဟုတ် available provider ကိုရွေးပါ။", "Telecom payment ဖြစ်ရင် mobile number နဲ့ verification flow ကိုဆက်လုပ်ပါ။", "Payment confirmation အဆင့်ကိုပြီးအောင်လုပ်ပါ။"],
-    functions: ["MPT & ATOM", "KBZ Pay", "Wallets", "Cards", "Melo Coin"], image: "image14.jpg"
+    functions: ["MPT & ATOM", "KBZ Pay", "Wallets", "Cards", "Melo Coin"], image: "image14.jpg", illustration: "feature-payment.png"
   },
   {
     id: "store", title: "Store", icon: "▣", access: "free",
@@ -155,11 +155,12 @@ function renderFeatures() {
   });
 
   grid.innerHTML = visible.map((feature, index) => `
-    <button class="feature-card" type="button" data-feature="${feature.id}" aria-label="${escapeHtml(feature.title)} လမ်းညွှန်ဖွင့်ရန်">
+    <button class="feature-card${feature.illustration ? " feature-card--illustrated" : ""}" type="button" data-feature="${feature.id}" aria-label="${escapeHtml(feature.title)} လမ်းညွှန်ဖွင့်ရန်">
       <span class="card-top">
         <span class="feature-icon" aria-hidden="true">${escapeHtml(feature.icon)}</span>
         <span class="access-badge badge-${feature.access}">${labels[feature.access]}</span>
       </span>
+      ${feature.illustration ? `<span class="card-illustration" aria-hidden="true"><img src="assets/illustrations/${feature.illustration}" alt="" loading="lazy" decoding="async"></span>` : ""}
       <h3>${escapeHtml(feature.title)}</h3>
       <p>${escapeHtml(feature.description)}</p>
       <span class="card-action">အသုံးပြုပုံကြည့်ရန် →</span>
@@ -174,9 +175,13 @@ function openFeature(id) {
   const feature = features.find(item => item.id === id);
   if (!feature) return;
   const number = String(features.indexOf(feature) + 1).padStart(2, "0");
-  const image = feature.image
-    ? `<div class="dialog-media"><img src="assets/screenshots/${feature.image}" alt="${escapeHtml(feature.title)} app screenshot" loading="lazy"></div>`
-    : `<div class="dialog-media placeholder"><span aria-hidden="true">${escapeHtml(feature.icon)}</span><p>ဒီ feature အတွက် screenshot ကို မကြာမီ ထည့်သွင်းပါမယ်။</p></div>`;
+  const illustration = feature.illustration
+    ? `<div class="dialog-illustration" aria-hidden="true"><img src="assets/illustrations/${feature.illustration}" alt="" decoding="async"></div>`
+    : "";
+  const screenshot = feature.image
+    ? `<figure class="app-screen"><figcaption><span>တကယ့် Melo App Screen</span><small>အောက်က screenshot မှာ နှိပ်ရမယ့်နေရာကို ရှာကြည့်ပါ</small></figcaption><div class="phone-frame"><img src="assets/screenshots/${feature.image}" alt="${escapeHtml(feature.title)} app screenshot" loading="lazy"></div></figure>`
+    : `<div class="media-placeholder"><span aria-hidden="true">${escapeHtml(feature.icon)}</span><p>ဒီ feature အတွက် screenshot ကို မကြာမီ ထည့်သွင်းပါမယ်။</p></div>`;
+  const media = `<aside class="dialog-media${feature.illustration ? " has-illustration" : ""}">${illustration}${screenshot}</aside>`;
 
   dialogContent.innerHTML = `
     <div class="dialog-layout">
@@ -189,7 +194,7 @@ function openFeature(id) {
         <h3>အဓိကလုပ်ဆောင်ချက်များ</h3>
         <ul class="function-list">${feature.functions.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
       </article>
-      ${image}
+      ${media}
     </div>`;
   dialog.showModal();
   document.body.style.overflow = "hidden";
