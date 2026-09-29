@@ -165,7 +165,7 @@ kbd { border: 1px solid var(--line); background: #f5f2f5; color: #817a84; border
 .feature-card--illustrated { background: linear-gradient(145deg, #fff 45%, #fff1f6); }
 .feature-card--illustrated h3, .feature-card--illustrated p { max-width: calc(100% - 106px); }
 .card-illustration { position: absolute; right: -.4rem; bottom: .35rem; width: 132px; height: 126px; display: grid; place-items: end center; pointer-events: none; }
-.card-illustration img { width: 100%; max-height: 100%; object-fit: contain; filter: drop-shadow(0 14px 18px rgba(83, 18, 47, .14)); }
+.card-illustration img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 14px 18px rgba(83, 18, 47, .14)); }
 .empty-state { text-align: center; padding: 4rem 1rem; }
 .empty-state span { font-size: 3rem; color: #c7bdc4; }
 .empty-state h3 { margin: .8rem 0 .25rem; }

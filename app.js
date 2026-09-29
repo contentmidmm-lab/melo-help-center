@@ -9,43 +9,43 @@ const features = [
     id: "artist-tab", title: "Artist Tab", icon: "A", access: "free",
     description: "Melo ထဲက artists တွေကို browse, search နဲ့ follow လုပ်နိုင်တဲ့ artist discovery area ဖြစ်ပါတယ်။",
     steps: ["Artists tab ကိုဝင်ပါ။", "Top ကိုရွေးပြီး popular artists တွေကိုကြည့်ပါ၊ သို့မဟုတ် Browse ကိုရွေးပါ။", "Search bar မှာ artist name ရိုက်ပြီးရှာပါ။", "Follow icon ကိုနှိပ်ပြီး artist ကို follow သို့မဟုတ် unfollow လုပ်ပါ။"],
-    functions: ["Top & Browse", "Artist search", "Follower count", "Follow / Following"], image: "image2.jpg"
+    functions: ["Top & Browse", "Artist search", "Follower count", "Follow / Following"], image: "image2.jpg", illustration: "feature-artist-tab.webp"
   },
   {
     id: "artist-profile", title: "Artist Profile", icon: "♪", access: "free",
     description: "Artist တစ်ယောက်ရဲ့ songs, albums, collaborations, videos, playlists နဲ့ profile information တွေကို စုစည်းထားတဲ့ page ဖြစ်ပါတယ်။",
     steps: ["Artist name သို့မဟုတ် profile ကိုနှိပ်ပြီး Artist Profile ကိုဝင်ပါ။", "Songs tab မှာ Popular Songs နဲ့ related music content တွေကိုကြည့်ပါ။", "Follow ကိုနှိပ်ပြီး artist ကို follow လုပ်နိုင်ပါတယ်။", "About tab မှာ genre, biography နဲ့ background information ကိုကြည့်ပါ။", "Share ကိုနှိပ်ပြီး artist profile ကိုမျှဝေပါ။"],
-    functions: ["Popular Songs", "Albums", "Playlists", "Songs & About", "Share"], image: "image3.jpg"
+    functions: ["Popular Songs", "Albums", "Playlists", "Songs & About", "Share"], image: "image3.jpg", illustration: "feature-artist-profile.webp"
   },
   {
     id: "feed", title: "Feed", icon: "▶", access: "free",
     description: "Short-form song content တွေကို scroll လုပ်ရင်း songs နဲ့ artists အသစ်တွေ discover လုပ်နိုင်တဲ့ feature ဖြစ်ပါတယ်။",
     steps: ["Bottom navigation မှ Feed ကိုဝင်ပါ။", "Discover သို့မဟုတ် Following ကိုရွေးပါ။", "Feed ကို scroll လုပ်ပြီး song preview ကိုနားထောင်ပါ။", "Play button ကိုနှိပ်ပြီး Full Song ကိုဆက်နားထောင်ပါ။", "Like, Comment, Add, Share ကိုလိုအပ်သလိုအသုံးပြုပါ။"],
-    functions: ["Discover", "Following", "Full Song", "Like & Comment", "Add & Share"], image: "image4.jpg"
+    functions: ["Discover", "Following", "Full Song", "Like & Comment", "Add & Share"], image: "image4.jpg", illustration: "feature-feed.webp"
   },
   {
     id: "search", title: "Search & Discovery", icon: "⌕", access: "free",
     description: "Artist, Song, Album, Playlist, Collection နဲ့ Video content တွေကိုရှာဖွေပြီး Genre နဲ့ recommendation ကနေ discover လုပ်နိုင်ပါတယ်။",
     steps: ["Search ကိုဝင်ပါ။", "Search bar မှာ keyword ရိုက်ပါ။", "All, Artist, Song, Album, Playlist, Collection, Video အလိုက် result ကို filter လုပ်ပါ။", "လိုချင်တဲ့ result ကိုနှိပ်ပြီး play သို့မဟုတ် detail page ကိုဝင်ပါ။", "Pick For You သို့မဟုတ် Genre ကနေ content အသစ်တွေ browse လုပ်နိုင်ပါတယ်။"],
-    functions: ["Multi-category search", "Pick For You", "Genre", "Recent Search"], image: "image5.jpg"
+    functions: ["Multi-category search", "Pick For You", "Genre", "Recent Search"], image: "image5.jpg", illustration: "feature-search.webp"
   },
   {
     id: "player", title: "Music Player", icon: "▷", access: "free",
     description: "Playback controls နဲ့ song-related actions တွေကို တစ်နေရာတည်းကနေ အသုံးပြုနိုင်တဲ့ main listening interface ဖြစ်ပါတယ်။",
     steps: ["Song တစ်ပုဒ်ကို Play လုပ်ပြီး Player ကိုဖွင့်ပါ။", "Play/Pause, Previous/Next, Seek, Shuffle, Repeat ကိုအသုံးပြုပါ။", "More menu (…) ကနေ Add to Playlist, Download, Album, Artist, Ringtune, Comment, Timer သို့မဟုတ် Share ကိုရွေးပါ။", "Queue ကိုဖွင့်ပြီး လက်ရှိနဲ့နောက်ဖွင့်မယ့် songs တွေကိုကြည့် သို့မဟုတ် စီမံပါ။"],
-    functions: ["Playback controls", "Like", "Add to Playlist", "Queue", "Timer & Share"], image: "image6.jpg"
+    functions: ["Playback controls", "Like", "Add to Playlist", "Queue", "Timer & Share"], image: "image6.jpg", illustration: "feature-player.webp"
   },
   {
     id: "quality", title: "Song Quality", icon: "HQ", access: "mixed",
     description: "Audio quality ကို Low, Medium နဲ့ High ဆိုပြီးရွေးချယ်နိုင်ပါတယ်။ Low Quality တစ်ခုတည်းကို Free အသုံးပြုနိုင်ပြီး Medium နဲ့ High Quality က Premium benefits ဖြစ်ပါတယ်။",
     steps: ["Song ကို Player မှာဖွင့်ပါ။", "Audio Quality control ကိုနှိပ်ပါ။", "Free user ဖြစ်ရင် Low Quality ကိုရွေးနိုင်ပါတယ်။", "Premium user ဖြစ်ရင် Medium Quality သို့မဟုတ် High Quality ကိုရွေးနိုင်ပါတယ်။"],
-    functions: ["Low — Free", "Medium — Premium", "High — Premium"], image: "image7.jpg"
+    functions: ["Low — Free", "Medium — Premium", "High — Premium"], image: "image7.jpg", illustration: "feature-quality.webp"
   },
   {
     id: "playlist", title: "Playlist", icon: "≡", access: "mixed",
     description: "ကိုယ်ပိုင် playlist ဖန်တီး၊ songs ထည့်၊ reorder နဲ့ edit လုပ်နိုင်ပါတယ်။ Playlist offline listening က Premium benefit ဖြစ်ပါတယ်။",
     steps: ["Library > Playlists ကိုဝင်ပါ။", "Create New Playlist ကိုနှိပ်ပါ။", "Recommended Songs, Recently Played, Liked Songs သို့မဟုတ် Search ကနေ songs ထည့်ပါ။", "Edit Playlist မှာ name, cover image နဲ့ description ကိုပြင်ပါ။", "Manage Playlist ကနေ song order ကို reorder သို့မဟုတ် remove လုပ်ပါ။", "Premium user ဖြစ်ရင် Playlist ကို Download လုပ်ပြီး offline နားထောင်ပါ။"],
-    functions: ["Create playlist", "Add songs", "Edit details", "Reorder / Remove", "Offline — Premium"], image: "image8.jpg"
+    functions: ["Create playlist", "Add songs", "Edit details", "Reorder / Remove", "Offline — Premium"], image: "image8.jpg", illustration: "feature-playlist.webp"
   },
   {
     id: "download", title: "Download / Offline", icon: "↓", access: "premium",
@@ -57,13 +57,13 @@ const features = [
     id: "lyrics", title: "Visible Lyrics", icon: "Aa", access: "premium",
     description: "သီချင်းနားထောင်နေချိန် Full Lyrics ကိုကြည့်နိုင်တဲ့ Premium feature ဖြစ်ပါတယ်။",
     steps: ["Song ကို Player မှာဖွင့်ပါ။", "Lyrics ကိုနှိပ်ပါ။", "Lyrics screen မှာ song နားထောင်ရင်း စာသားတွေကိုကြည့် သို့မဟုတ် scroll လုပ်ပါ။", "လိုအပ်ရင် Share သို့မဟုတ် Karaoke ကိုဆက်ဝင်နိုင်ပါတယ်။"],
-    functions: ["Full-screen lyrics", "Playback controls", "Lyrics while listening"], image: "image6.jpg"
+    functions: ["Full-screen lyrics", "Playback controls", "Lyrics while listening"], image: "image6.jpg", illustration: "feature-lyrics.webp"
   },
   {
     id: "lyrics-sharing", title: "Lyrics Sharing", icon: "↗", access: "free",
     description: "ရွေးချယ်ထားတဲ့ lyric lines တွေကို Melo-branded share card အဖြစ်ဖန်တီးပြီး social platforms ကိုမျှဝေနိုင်ပါတယ်။",
     steps: ["Lyrics Sharing flow ကိုဖွင့်ပါ။", "မျှဝေချင်တဲ့ lyric line တွေကိုရွေးပါ။", "Next ကိုနှိပ်ပြီး share card preview ကိုကြည့်ပါ။", "Background သို့မဟုတ် color option ကိုရွေးပါ။", "Facebook, Instagram, TikTok Stories သို့မဟုတ် available option ကနေမျှဝေပါ။"],
-    functions: ["Lyric selection", "Share card", "Background", "Social sharing"], image: "image6.jpg"
+    functions: ["Lyric selection", "Share card", "Background", "Social sharing"], image: "image6.jpg", illustration: "feature-lyrics-sharing.webp"
   },
   {
     id: "karaoke", title: "Karaoke", icon: "♩", access: "premium",
@@ -75,19 +75,19 @@ const features = [
     id: "timer", title: "Sleep Timer", icon: "◷", access: "free",
     description: "သတ်မှတ်ထားတဲ့အချိန်အပြီးမှာ playback ကို အလိုအလျောက်ရပ်စေပါတယ်။ Player menu နဲ့ Queue နှစ်နေရာလုံးကနေ ဝင်နိုင်ပါတယ်။",
     steps: ["Music Player menu သို့မဟုတ် Queue ကိုဖွင့်ပါ။", "Timer ကိုနှိပ်ပါ။", "5, 15, 30, 45 minutes, 1 hour သို့မဟုတ် End of Song ကိုရွေးပါ။", "Timer မလိုတော့ရင် Timer Off ကိုရွေးပါ။"],
-    functions: ["Player menu", "Queue access", "Timed stop", "End of Song", "Timer Off"], image: "image11.jpg"
+    functions: ["Player menu", "Queue access", "Timed stop", "End of Song", "Timer Off"], image: "image11.jpg", illustration: "feature-timer.webp"
   },
   {
     id: "library", title: "Library", icon: "▤", access: "free",
     description: "Created, liked, recently played, downloaded, purchased နဲ့ followed content တွေကို တစ်နေရာတည်းမှာ စုစည်းထားပါတယ်။",
     steps: ["Library ကိုဝင်ပါ။", "Playlists, Songs, Albums သို့မဟုတ် Artists tab ကိုရွေးပါ။", "Songs မှာ Liked Songs, Recently Played နဲ့ downloaded content ကိုကြည့်ပါ။", "Albums မှာ Purchased Albums နဲ့ Downloaded Albums ကိုကြည့်ပါ။", "Artists မှာ follow လုပ်ထားတဲ့ artists တွေကိုကြည့် သို့မဟုတ် စီမံပါ။", "Search သို့မဟုတ် sorting option ကိုသုံးပါ။"],
-    functions: ["Playlists", "Songs", "Albums", "Artists", "Search & Sorting"], image: "image12.jpg"
+    functions: ["Playlists", "Songs", "Albums", "Artists", "Search & Sorting"], image: "image12.jpg", illustration: "feature-library.webp"
   },
   {
     id: "premium", title: "Premium", icon: "★", access: "premium",
     description: "High Audio Quality, Offline Download, Visible Lyrics, Offline Playlist Listening နဲ့ Karaoke ကို unlock လုပ်ပေးတဲ့ paid membership ဖြစ်ပါတယ်။",
     steps: ["Profile သို့မဟုတ် Premium entry ကိုဝင်ပါ။", "Daily, Weekly, Monthly သို့မဟုတ် Quarterly plan ကိုရွေးပါ။", "Available payment method ကိုရွေးပြီး payment ကိုဆက်လုပ်ပါ။", "Redeem Code သို့မဟုတ် QR Code ရှိရင် Redeem ကနေ activate လုပ်ပါ။", "Subscription active ဖြစ်ရင် remaining days ကို Premium page မှာကြည့်ပါ။"],
-    functions: ["High Audio Quality", "Offline Download", "Visible Lyrics", "Offline Playlist", "Karaoke"], image: "image13.jpg"
+    functions: ["High Audio Quality", "Offline Download", "Visible Lyrics", "Offline Playlist", "Karaoke"], image: "image13.jpg", illustration: "feature-premium.webp"
   },
   {
     id: "payment", title: "Payment Options", icon: "₭", access: "free",
@@ -99,41 +99,42 @@ const features = [
     id: "store", title: "Store", icon: "▣", access: "free",
     description: "Singles, albums နဲ့ eligible music products တွေကို browse, search နဲ့ purchase လုပ်နိုင်တဲ့ marketplace ဖြစ်ပါတယ်။",
     steps: ["Store ကိုဝင်ပါ။", "Search bar သို့မဟုတ် sorting options နဲ့ album သို့မဟုတ် single ကိုရှာပါ။", "Product detail မှာ title, artist, duration, year/type နဲ့ price ကိုကြည့်ပါ။", "Purchase ကိုနှိပ်ပြီး payment method ကိုရွေးပါ။", "Checkout သို့မဟုတ် Confirm Payment ကိုပြီးအောင်လုပ်ပါ။", "Purchased album ကို Library > Purchased Albums မှာပြန်ကြည့်ပါ။"],
-    functions: ["Search & Sort", "Product details", "Checkout", "Lifetime album benefits"], image: "image15.jpg"
+    functions: ["Search & Sort", "Product details", "Checkout", "Lifetime album benefits"], image: "image15.jpg", illustration: "feature-store.webp"
   },
   {
     id: "ringtune", title: "Ringtune (CRBT)", icon: "♬", access: "free",
     description: "သီချင်းတစ်ပုဒ်ရဲ့ available section ကို caller ringback tone အဖြစ် activate လုပ်နိုင်ပါတယ်။ MPT, U9 နဲ့ ATOM ကို support လုပ်ပါတယ်။",
     steps: ["Music Player မှ More menu ကိုဖွင့်ပါ။", "Ringtune ကိုနှိပ်ပါ။", "Verse သို့မဟုတ် Chorus စတဲ့ available section ထဲက လိုချင်တာကိုရွေးပါ။", "Get Ringtune ကိုနှိပ်ပါ။", "MPT, U9 သို့မဟုတ် ATOM ကိုရွေးပြီး activation flow ကိုဆက်လုပ်ပါ။"],
-    functions: ["CRBT section", "MPT", "U9", "ATOM", "Player integration"], image: "image11.jpg"
+    functions: ["CRBT section", "MPT", "U9", "ATOM", "Player integration"], image: "image11.jpg", illustration: "feature-ringtune.webp"
   },
   {
     id: "comment", title: "Comment", icon: "◌", access: "free",
     description: "Songs နဲ့ content တွေအောက်မှာ users အချင်းချင်း comment, like နဲ့ reply လုပ်နိုင်တဲ့ community interaction feature ဖြစ်ပါတယ်။",
     steps: ["Song သို့မဟုတ် content ရဲ့ Comment ကိုဖွင့်ပါ။", "Existing comments တွေကို scroll လုပ်ပြီးကြည့်ပါ။", "Like ကိုနှိပ်ပြီး comment ကို like လုပ်ပါ။", "Reply ကိုနှိပ်ပြီး comment thread ထဲပြန်ရေးပါ။", "Write comment… မှာ ကိုယ်ပိုင် comment ရေးပြီးတင်ပါ။"],
-    functions: ["Write comments", "Like", "Reply threads", "Profile & Time"], image: "image16.jpg"
+    functions: ["Write comments", "Like", "Reply threads", "Profile & Time"], image: "image16.jpg", illustration: "feature-comment.webp"
   },
   {
     id: "live-video", title: "Live & Videos", icon: "●", access: "free",
     description: "Live broadcasts, individual videos နဲ့ video playlists တွေကို တစ်နေရာတည်းမှာ ကြည့်နိုင်တဲ့ video content hub ဖြစ်ပါတယ်။",
     steps: ["Home shortcut ကနေ Live & Videos ကိုဝင်ပါ။", "Live, Video သို့မဟုတ် Playlist tab ကိုရွေးပါ။", "Live tab မှာ LIVE badge နဲ့ broadcast content ကိုရွေးပါ။", "Video tab မှာ individual video ကိုဖွင့်ပါ။", "Playlist tab မှာ video playlist ကိုရွေးပြီး ပါဝင်တဲ့ videos တွေကိုကြည့်ပါ။"],
-    functions: ["Live", "Video", "Playlist", "LIVE indicator"], image: "image17.jpg"
+    functions: ["Live", "Video", "Playlist", "LIVE indicator"], image: "image17.jpg", illustration: "feature-live-video.webp"
   },
   {
     id: "podcast", title: "Podcast", icon: "◉", access: "free",
     description: "Podcast series နဲ့ individual episodes တွေကို discover, follow, download နဲ့ listen လုပ်နိုင်တဲ့ dedicated audio experience ဖြစ်ပါတယ်။",
     steps: ["Home > Podcasts ကိုဝင်ပါ။", "Popular Episodes, Recent Episodes သို့မဟုတ် New Podcasts ကနေ content ရွေးပါ။", "Podcast series ကိုဖွင့်ပြီး episode list, speaker info နဲ့ category ကိုကြည့်ပါ။", "Episode ကိုရွေးပြီး Play လုပ်ပါ။", "Player မှ playback speed, 15-second rewind/forward, quality, timer, share နဲ့ queue ကိုအသုံးပြုပါ။"],
-    functions: ["Popular / Recent", "Series & Episodes", "Follow & Download", "Playback speed", "Timer & Queue"], image: "image18.jpg"
+    functions: ["Popular / Recent", "Series & Episodes", "Follow & Download", "Playback speed", "Timer & Queue"], image: "image18.jpg", illustration: "feature-podcast.webp"
   },
   {
     id: "profile", title: "Profile & Settings", icon: "☺", access: "free",
     description: "Profile information, Premium status, Melo Coin balance, transaction history နဲ့ app or account settings တွေကို စီမံနိုင်တဲ့ central account area ဖြစ်ပါတယ်။",
     steps: ["Profile ကိုဝင်ပါ။", "Profile picture, user name, Melo ID, Premium status, remaining days နဲ့ Melo Coin balance ကိုကြည့်ပါ။", "Premium, Premium Pass, Redeem သို့မဟုတ် Transaction History ကိုဝင်ပါ။", "Streaming Quality နဲ့ Notifications settings ကိုပြင်ပါ။", "Edit icon ကနေ profile information ကိုပြင်ပါ။", "Support, Policies, Logout သို့မဟုတ် Delete Account ကိုလိုအပ်သလိုအသုံးပြုပါ။"],
-    functions: ["Account summary", "Premium & Redeem", "Transactions", "Quality & Notifications", "Support & Policies"], image: "image19.jpg"
+    functions: ["Account summary", "Premium & Redeem", "Transactions", "Quality & Notifications", "Support & Policies"], image: "image19.jpg", illustration: "feature-profile.webp"
   }
 ];
 
 const labels = { free: "Free", premium: "Premium", mixed: "Free + Premium" };
+const fastImage = filename => filename.replace(/\.(?:png|jpg)$/, ".webp");
 const grid = document.querySelector("#featureGrid");
 const searchInput = document.querySelector("#searchInput");
 const resultCount = document.querySelector("#resultCount");
@@ -160,7 +161,7 @@ function renderFeatures() {
         <span class="feature-icon" aria-hidden="true">${escapeHtml(feature.icon)}</span>
         <span class="access-badge badge-${feature.access}">${labels[feature.access]}</span>
       </span>
-      ${feature.illustration ? `<span class="card-illustration" aria-hidden="true"><img src="assets/illustrations/${feature.illustration}" alt="" loading="lazy" decoding="async"></span>` : ""}
+      ${feature.illustration ? `<span class="card-illustration" aria-hidden="true"><img src="assets/illustrations/${fastImage(feature.illustration)}" alt="" loading="lazy" decoding="async" width="800" height="600"></span>` : ""}
       <h3>${escapeHtml(feature.title)}</h3>
       <p>${escapeHtml(feature.description)}</p>
       <span class="card-action">အသုံးပြုပုံကြည့်ရန် →</span>
@@ -176,10 +177,10 @@ function openFeature(id) {
   if (!feature) return;
   const number = String(features.indexOf(feature) + 1).padStart(2, "0");
   const illustration = feature.illustration
-    ? `<div class="dialog-illustration" aria-hidden="true"><img src="assets/illustrations/${feature.illustration}" alt="" decoding="async"></div>`
+    ? `<div class="dialog-illustration" aria-hidden="true"><img src="assets/illustrations/${fastImage(feature.illustration)}" alt="" decoding="async" width="800" height="600"></div>`
     : "";
   const screenshot = feature.image
-    ? `<figure class="app-screen"><figcaption><span>တကယ့် Melo App Screen</span><small>အောက်က screenshot မှာ နှိပ်ရမယ့်နေရာကို ရှာကြည့်ပါ</small></figcaption><div class="phone-frame"><img src="assets/screenshots/${feature.image}" alt="${escapeHtml(feature.title)} app screenshot" loading="lazy"></div></figure>`
+    ? `<figure class="app-screen"><figcaption><span>တကယ့် Melo App Screen</span><small>အောက်က screenshot မှာ နှိပ်ရမယ့်နေရာကို ရှာကြည့်ပါ</small></figcaption><div class="phone-frame"><img src="assets/screenshots/${fastImage(feature.image)}" alt="${escapeHtml(feature.title)} app screenshot" loading="lazy" decoding="async" width="590" height="1280"></div></figure>`
     : `<div class="media-placeholder"><span aria-hidden="true">${escapeHtml(feature.icon)}</span><p>ဒီ feature အတွက် screenshot ကို မကြာမီ ထည့်သွင်းပါမယ်။</p></div>`;
   const media = `<aside class="dialog-media${feature.illustration ? " has-illustration" : ""}">${illustration}${screenshot}</aside>`;
 
